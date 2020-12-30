@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Lato', sans-serif;
+
+  background: #334d50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  background-color: #101f21!important;
+  color: #fff!important;
+  height: 12vh !important;
+  padding-top: 20px!important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
 }
 
-.App-link {
-  color: #61dafb;
+nav p{
+  font-size: 22px!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+.card{
+  background-color: transparent!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: bolder!important;
+}
+
+p{
+  font-weight: 600!important;
+}
+
+.card-body p{
+  color:rgb(112, 45, 33)!important;
+}
+
+.card-body h6{
+  color: rgb(105, 18, 105)!important;
+    /* margin-bottom: 5px!important; */
+    border-bottom: 1px solid rgb(99 85 85)!important;
+    padding-bottom: 5px;
+}
+
+i{
+  box-sizing: border-box;
+}
+ .fas {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  
+}
+
+@media (max-width: 500px){
+  nav{
+    visibility: hidden;
   }
 }
